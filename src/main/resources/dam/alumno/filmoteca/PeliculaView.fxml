@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="408.0" prefWidth="525.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dam.alumno.filmoteca.PeliculaController">
+    <center>
+        <AnchorPane prefHeight="408.0" prefWidth="606.0">
+            <Label styleClass="infoLabel" text="ID" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10" />
+            <Label fx:id="campoId" prefWidth="400.0" text="?" AnchorPane.leftAnchor="100" AnchorPane.topAnchor="10" />
+            <Label styleClass="infoLabel" text="Título" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="60" />
+            <TextField fx:id="campoTitulo" prefWidth="400.0" AnchorPane.leftAnchor="100" AnchorPane.topAnchor="60" />
+            <Label styleClass="infoLabel" text="Año" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="110" />
+            <TextField fx:id="campoFecha" prefWidth="400.0" AnchorPane.leftAnchor="100" AnchorPane.topAnchor="110" />
+            <Label styleClass="infoLabel" text="Descripcion" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="160" />
+            <TextArea fx:id="campoDescripcion" prefHeight="100.0" prefWidth="400.0" wrapText="true" AnchorPane.leftAnchor="100" AnchorPane.topAnchor="160" />
+            <Label styleClass="infoLabel" text="Valoración" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="270" />
+            <Slider fx:id="campoValor" blockIncrement="1" max="10" prefHeight="38.0" prefWidth="376.0" showTickLabels="true" showTickMarks="true" AnchorPane.leftAnchor="100" AnchorPane.topAnchor="270" />
+            <Label fx:id="textoValor" layoutX="484.0" prefHeight="17.0" prefWidth="16.0" text="0" AnchorPane.leftAnchor="484.0" AnchorPane.topAnchor="270" />
+            <Label styleClass="infoLabel" text="Poster" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="320" />
+            <TextField fx:id="campoPoster" prefWidth="400.0" promptText="URL" AnchorPane.leftAnchor="100" AnchorPane.topAnchor="320" />
+            <Button layoutX="101.0" layoutY="363.0" mnemonicParsing="false" onAction="#onConfirmar" prefHeight="30.0" prefWidth="398.0" text="Guardar" AnchorPane.leftAnchor="101.0" AnchorPane.topAnchor="363.0" />
+        </AnchorPane>
+    </center>
+</BorderPane>
